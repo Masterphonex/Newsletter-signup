@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Masterphonex/Newsletter-signup)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [source code](https://github.com/Masterphonex/Newsletter-signup)
+- Live Site URL: [live site](https://newsletter-signuppage.netlify.app/)
 
 
 ### Built with
