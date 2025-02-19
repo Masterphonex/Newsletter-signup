@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwind.config.js"></script>
+  
+
+</head>
+
+<body class="w-[100vw] h-[100vh] bg-Blue700 flex items-center justify-center ">
+
+  <div class="w-[750px] max-sm:w-[350px] max-sm:flex-col-reverse rounded-3xl bg-White flex items-center justify-between p-5 max-sm:p-0 overflow-hidden animate__animated animate__backInDown" id="step1">
+
+    <div class="w-[55%] max-sm:mt-8 max-sm:w-full h-full pl-5 pr-[50px] max-sm:pr-4 ">
+      <h1 class="text-4xl text-Blue700 font-bold animate__animated animate__fadeIn animate__delay-1s">
+        Stay Updated!
+      </h1>
+
+      <p class="text-sm text-Blue700 mt-5 animate__animated animate__fadeIn animate__delay-1s">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+
+      <div class="flex gap-2 items-center justify-start mt-4 animate__animated animate__fadeInLeft animate__delay-1s">
+        <img src="../assets/images/icon-list.svg" alt="icon list" />
+
+        <p class="text-Blue800 text-sm ">
+          Product discovery and building what matters
+        </p>
+      </div>
+
+      <div class="flex z-0 gap-2 items-center justify-start mt-4 animate__animated animate__fadeInRight animate__delay-1s">
+        <img src="../assets/images/icon-list.svg" alt="icon list" />
+
+        <p class="text-Blue800 text-sm ">
+          Measuring to ensure updates are a success
+        </p>
+      </div>
+
+      <div class="flex gap-2 items-center justify-start mt-4 animate__animated animate__fadeInLeft animate__delay-1s">
+        <img src="../assets/images/icon-list.svg" alt="icon list" />
+
+        <p class="text-Blue800 text-sm ">
+          And much more!
+        </p>
+      </div>
+
+
+      <form onsubmit="handleSubmit(event)" class="mt-10  animate__animated animate__fadeIn animate__delay-1s">
+
+        <div class="w-full flex items-center justify-between">
+          <label class="font-bold text-Blue800 text-sm">Email address</label>
+          <p id="error" class="font-bold text-sm text-Red">
+          </p>
+        </div>
+
+        <input type="text" id="email" class="w-full rounded-lg border border-Grey px-6 py-4 text-Grey mt-3" placeholder="email@company.com" />
+
+        <button type="submit" class="w-full font-bold text-White rounded-lg max-sm:mb-5  py-4 mt-3 bg-Blue700 hover:bg-gradient-to-r from-pink-600 hover:shadow hover:shadow-lg hover:shadow-red-500/50 via-red-400 to-orange-600">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+    <div class=" w-[45%] z-1 max-sm:w-full h-full ">
+      <img src="../assets/images/illustration-sign-up-desktop.svg" alt="" class="w-full z-1 h-full max-sm:hidden" />
+
+      <img src="../assets/images/illustration-sign-up-mobile.svg" alt="" class="w-full h-full hidden max-sm:block" />
+    </div>
+  </div>
+
+  <div id="step2" class="text-Blue800 w-[600px]  bg-white max-sm:w-[350px] rounded-[40px] flex flex-col gap-5 p-10 animate__animated animate__fadeInDown">
+    <img src="../assets/images/icon-success.svg" alt="success icon" class="w-[80px] " />
+    
+    <h1 class="font-bold mt-5 text-6xl max-sm:text-3xl text-Blue700 ">
+      Thanks for subscribing!
+    </h1>
+    
+    <p id="successM" class="text-lg"></p>
+    
+    <button class="w-full py-5 mt-5 mb-4 rounded-xl text-lg bg-Blue800 text-White font-bold hover:bg-gradient-to-r from-pink-600 hover:shadow hover:shadow-lg hover:shadow-red-500/50 via-red-400 to-orange-600" onclick="done()">Dismiss Message</button>
+  </div>
+
+<script src="./script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+<script src="./anime.min.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
